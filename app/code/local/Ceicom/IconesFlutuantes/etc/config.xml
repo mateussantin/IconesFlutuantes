@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Ceicom
+ * @package   Ceicom_IconesFlutuantes
+ * @author    Mateus Santin Junior
+ */
+-->
+<config>
+    <modules>
+        <Ceicom_IconesFlutuantes>
+            <version>1.0</version>
+        </Ceicom_IconesFlutuantes>
+    </modules>
+    <global>
+        <helpers>
+            <iconesflutuantes>
+                <class>Ceicom_IconesFlutuantes_Helper</class>
+            </iconesflutuantes>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <iconesflutuantes>
+                <use>admin</use>
+                <args>
+                    <module>Ceicom_IconesFlutuantes</module>
+                    <frontName>iconesflutuantes</frontName>
+                </args>
+            </iconesflutuantes>
+        </routers>
+    </admin>
+    <frontend>
+        <layout>
+            <updates>
+                <iconesflutuantes>
+                    <file>ceicom/iconeflutuante.xml</file>
+                </iconesflutuantes>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <iconesflutuantes translate="title" module="iconesflutuantes">
+                                            <title>Icones Flutuantes</title>
+                                        </iconesflutuantes>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

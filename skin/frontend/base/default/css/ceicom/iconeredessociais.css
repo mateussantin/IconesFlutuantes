@@ -1,0 +1,99 @@
+/* 
+    @category  Ceicom
+    @package   Ceicom_IconesFlutuantes
+    @author    Mateus Santin Junior
+*/
+
+.float-buttons {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    z-index: 100;
+}
+
+    .widget-button-icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        -webkit-box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.75);
+        transition: .4s all;
+    }
+
+         .widget-button-icon:hover {
+            opacity: .6;
+        }
+
+    .bg-messenger {
+        background-color: #0084ff;
+    }
+
+        .bg-messenger .icon {
+            background-image: url(/skin/frontend/base/default/images/ceicom/icones/messenger.png);
+        }
+
+    .bg-instagram {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+
+        .bg-instagram .icon {
+            background-image: url(/skin/frontend/base/default/images/ceicom/icones/instagram.png);
+        }
+
+    .bg-whatsapp {
+        background-color: #25D366;
+    }
+
+        .bg-whatsapp .icon {
+            background-image: url(/skin/frontend/base/default/images/ceicom/icones/whatsapp.png);
+        }
+
+    .bg-plus {
+        background-color: #000;
+    }
+
+        .bg-plus .icon {
+            background-image: url(/skin/frontend/base/default/images/ceicom/icones/plus.png);
+        }
+
+    .icon {
+        background-size: cover;
+        width: 26px;
+        height: 26px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+    }
+
+    .plus {
+        cursor: pointer;
+        display: none;
+    }
+
+    .float-buttons:hover > .icones {
+        display: block;
+        height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        .float-buttons {
+            bottom: 5px;
+            left: 15px;
+        }
+
+        .plus {
+            display: block;
+        }
+
+        .icones {
+            display: none;
+            transition: .4s all;
+            height: 50px;
+        }
+    }
