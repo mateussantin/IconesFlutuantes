@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Ceicom
+ * @package   Ceicom_IconesFlutuantes
+ * @author    Mateus Santin Junior
+ */
+-->
+<config>
+    <modules>
+        <Ceicom_IconesFlutuantes>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ceicom_IconesFlutuantes>
+    </modules>
+</config>

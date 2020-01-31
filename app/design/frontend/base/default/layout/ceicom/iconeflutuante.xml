@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Ceicom
+ * @package   Ceicom_IconesFlutuantes
+ * @author    Mateus Santin Junior
+ */
+-->
+<layout>
+	<default>
+		<reference name="head">
+			<action method="addItem"><type>skin_css</type><name>css/ceicom/iconeredessociais.css</name><params/></action>
+		</reference>
+		<reference name="footer">
+			<block type="core/template" name="icones" template="ceicom/iconesflutuantes/icones.phtml" />
+		</reference>
+	</default>
+</layout>

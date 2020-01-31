@@ -1,0 +1,62 @@
+<!--
+    // @category  Ceicom
+    // @package   Ceicom_IconesFlutuantes
+    // @author    Mateus Santin Junior
+-->
+<?php
+    //Variaveis
+    $enabled    = Mage::getStoreConfig('iconesflutuantes/configuracoes/enabled');
+    $messenger  = Mage::getStoreConfig('iconesflutuantes/configuracoes/messenger');
+    $instagram  = Mage::getStoreConfig('iconesflutuantes/configuracoes/instagram');
+    $whatsapp_1 = Mage::getStoreConfig('iconesflutuantes/configuracoes/whatsapp_1');
+    $whatsapp_2 = Mage::getStoreConfig('iconesflutuantes/configuracoes/whatsapp_2');
+?>
+
+<?php if ( $enabled > 0):  ?>
+    <div class="float-buttons">
+        <div class="icones">
+            <!-- Messenger -->
+            <?php if ($messenger != ""): ?>
+                <a class="widget-button button-slide" href="<?php echo $messenger ?>" title="Messenger" target="_blank">
+                    <div class="widget-button-icon bg-messenger">
+                        <span class="icon"></span>
+                    </div>
+                </a>
+            <?php endif; ?>
+
+            <!-- Instagram -->
+            <?php if ($instagram != ""): ?>
+                <a class="widget-button button-slide" href="<?php echo $instagram ?>" title="Instagram" target="_blank">
+                    <div class="widget-button-icon bg-instagram">
+                        <span class="icon"></span>
+                    </div>
+                </a>
+            <?php endif; ?>
+
+            <!-- Whats 1 -->
+            <?php if ($whatsapp_1 != ""): ?>
+                <a class="widget-button button-slide" href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp_1 ?>" title="Whatsapp" target="_blank">
+                    <div class="widget-button-icon bg-whatsapp">
+                        <span class="icon"></span>
+                    </div>
+                </a>
+            <?php endif; ?>
+
+            <!-- Whats 2 -->
+            <?php if ($whatsapp_2 != ""): ?>
+                <a class="widget-button button-slide" href="https://api.whatsapp.com/send?phone=<?php echo $whatsapp_2 ?>" title="Whatsapp" target="_blank">
+                    <div class="widget-button-icon bg-whatsapp">
+                        <span class="icon"></span>
+                    </div>
+                </a>
+            <?php endif; ?>
+        </div>
+        
+        <!-- Plus -->
+        <div class="plus">
+            <div class="widget-button-icon bg-plus">
+                <span class="icon"></span>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
