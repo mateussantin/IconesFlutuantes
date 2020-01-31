@@ -11,7 +11,7 @@ visiveis fixo no canto inferior esquerdo do site com as seguintes opções de í
 
 Versões: Magento 1.x.x
 
-## Instalação
+## Install
 
 **Enviar** Mover as pastas 'app/js/skin' para a instalação do magento
 
